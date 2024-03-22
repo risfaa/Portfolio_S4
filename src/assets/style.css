@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+@layer components {
+    .border__header {
+        @apply border-noir border-t-2 mt-5 sm:mt-8 w-4/5 mx-auto sm:text-[30px];
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
