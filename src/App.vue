@@ -9,7 +9,9 @@ import FooterPage from './components/FooterPage.vue';
   <HeaderPage />
 
   <Suspense>
-    <RouterView />
+    <div class="p-4">
+      <RouterView />
+    </div>
   </Suspense>
 
   <FooterPage />
