@@ -20,6 +20,12 @@ export default {
       '3xl': '1.75rem', // 28px
       '4xl': '2.5rem', // 40px
     },
+    fontFamily: {
+      'Bold': ['Helvetica Neue Bold', 'sans-serif'],
+      'Roman': ['Helvetica Neue Roman', 'sans-serif'],
+      'Condensed': ['Helvetica Neue Condensed', 'sans-serif'],
+      'Heavy': ['Helvetica Neue Heavy', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
