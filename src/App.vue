@@ -9,10 +9,21 @@ import FooterPage from './components/FooterPage.vue';
   <HeaderPage />
 
   <Suspense>
-    <div class="p-4">
-      <RouterView />
-    </div>
+    <Transition name="fade">
+      <div class="p-4">
+        <RouterView />
+      </div>
+    </Transition>
   </Suspense>
 
   <FooterPage />
 </template>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+</style>
