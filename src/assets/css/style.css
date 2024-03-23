@@ -21,14 +21,15 @@
     right: 0;
     width: 100%;
     height: 100%;
+    font-size: 24px;
     display: flex;
-    gap: 3vh;
+    gap: 4vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 2;
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background-color: #1e1e1e;
     transform: translateX(100%) scale(0.1);
     transform-origin: 30% -50%;
@@ -39,6 +40,13 @@
     visibility: visible;
     opacity: 1;
     transform: translateX(0) scale(1);
+}
+
+.link {
+    transition: all 0.3s ease-in-out;
+}
+.link:hover {
+    color: #2575a8;
 }
 
 /* General */
