@@ -48,10 +48,10 @@ function toggleMenu() {
 
       <ul class="hidden sm:visible sm:flex sm:justify-end sm:gap-8" v-else>
         <li class="link">
-          <RouterLink to="/projets" @click="toggleMenu">Projets</RouterLink>
+          <RouterLink to="/projets">Projets</RouterLink>
         </li>
         <li class="link">
-          <RouterLink to="/about" @click="toggleMenu">A propos</RouterLink>
+          <RouterLink to="/about">A propos</RouterLink>
         </li>
       </ul>
 
