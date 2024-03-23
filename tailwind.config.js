@@ -19,6 +19,7 @@ export default {
       '2xl': '1.5rem', // 24px
       '3xl': '1.75rem', // 28px
       '4xl': '2.5rem', // 40px
+      '5xl': '3.5rem', // 56px
     },
     fontFamily: {
       'Bold': ['Helvetica Neue Bold', 'sans-serif'],
