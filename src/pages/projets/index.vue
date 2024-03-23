@@ -6,8 +6,8 @@ import ProjetImgComponent from '@/components/ProjetImgComponent.vue'
 <template>
     <div class="mt-[12vh] sm:mt-[20vh] md:px-[10%] lg:px-[12%]">
         <div class="text-center">
-            <h1 class="mb-4 text-2xl sm:text-4xl font-bold tracking-wider text-bleu">Mes réalisations</h1>
-            <div class="sm:text-xl">
+            <h1 class="mb-4 text-2xl sm:text-4xl font-Bold tracking-wider text-bleu">Mes réalisations</h1>
+            <div class="sm:text-[22px]">
                 <p>Voici la galerie de mes réalisations.</p>
                 <p>Vous y trouverez mes projets de couverture de manga personnalisée !</p>
             </div>
@@ -16,7 +16,7 @@ import ProjetImgComponent from '@/components/ProjetImgComponent.vue'
         <section class="sm:mt-32">
             <div class="flex items-center gap-3">
                 <ArrowAnimation />
-                <h2 class="font-bold sm:text-3xl">Couvertures dans le style de bleach -</h2>
+                <h2 class="font-Bold sm:text-3xl">Couvertures dans le style de bleach -</h2>
             </div>
             <p class="ml-5 mt-3 sm:text-lg">Découvrez mes jaquettes mangas qui reprennent le style incontournable du manga “Bleach” avec une apparence simple et épuré.</p>
             <div class="projet__grid">
@@ -34,7 +34,7 @@ import ProjetImgComponent from '@/components/ProjetImgComponent.vue'
         <section class="sm:mt-32">
             <div class="flex items-center gap-3">
                 <ArrowAnimation />
-                <h2 class="font-bold sm:text-3xl">Fresque manga personnalisée -</h2>
+                <h2 class="font-Bold sm:text-3xl">Fresque manga personnalisée -</h2>
             </div>
             <p class="ml-5 mt-3 sm:text-lg">Découvrez des fresques mangas, avec une fois tout les mangas mit bout-à-bout forment une fresque qui permet d’embellir votre mangathèque.</p>
             <div class="projet__grid--manga">

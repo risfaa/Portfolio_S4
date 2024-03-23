@@ -33,11 +33,11 @@ function toggleMenu() {
         </li>
       </ul>
     </nav>
-    <nav class="bg-noir flex justify-between duration-500 mx-2 sm:w-5/6 sm:mx-auto sm:text-[18px] rounded-md p-4 sm:p-3 sm:px-6 text-blanc mt-5" v-else>
+    <nav class="bg-noir flex justify-between duration-500 mx-2 sm:w-5/6 sm:mx-auto sm:text-[24px] rounded-md p-4 sm:p-5 sm:px-8 text-blanc mt-5" v-else>
       <div>
         <RouterLink to="/" class="link">Faris HALEPOVIC</RouterLink>
       </div>
-      <ul class="menu sm:justify-end sm:gap-6" :class="{ 'menu--mobile' : activeMenu}" v-if="activeMenu">
+      <ul class="menu sm:justify-end sm:gap-8" :class="{ 'menu--mobile' : activeMenu}" v-if="activeMenu">
         <li class="link">
           <RouterLink to="/projets" @click="toggleMenu">Projets</RouterLink>
         </li>
@@ -46,7 +46,7 @@ function toggleMenu() {
         </li>
       </ul>
 
-      <ul class="hidden sm:visible sm:flex sm:justify-end sm:gap-6" v-else>
+      <ul class="hidden sm:visible sm:flex sm:justify-end sm:gap-8" v-else>
         <li class="link">
           <RouterLink to="/projets">Projets</RouterLink>
         </li>
