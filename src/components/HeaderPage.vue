@@ -18,7 +18,6 @@ const activeMenu = ref(false)
 // Fonction pour ouvrir/fermer le menu
 function toggleMenu() {
   activeMenu.value = !activeMenu.value;
-  document.body.classList.toggle('menu-open');
 }
 </script>
 
@@ -38,7 +37,7 @@ function toggleMenu() {
       <div>
         <RouterLink to="/">Faris HALEPOVIC</RouterLink>
       </div>
-      <ul class="max-sm:hidden flex justify-end gap-4 sm:gap-8">
+      <ul class="menu sm:justify-end sm:gap-8" :class="{ 'menu--mobile' : activeMenu}">
         <li>
           <RouterLink to="/projets" @click="toggleMenu">Projets</RouterLink>
         </li>
