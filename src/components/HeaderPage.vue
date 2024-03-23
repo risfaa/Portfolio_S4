@@ -1,14 +1,63 @@
 <script setup lang="ts">
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
+const showHeader = ref(false)
+
+watch(route, () => {
+  if (route.path === '/') {
+    showHeader.value = true
+  } else {
+    showHeader.value = false
+  }
+})
+
+// Variable etat du menu
+const activeMenu = ref(false)
+// Fonction pour ouvrir/fermer le menu
+function toggleMenu() {
+  activeMenu.value = !activeMenu.value;
+  document.body.classList.toggle('menu-open');
+}
 </script>
 
 <template>
   <header>
-    <nav class="border__header">
+    <nav class="border__header" v-if="showHeader">
       <ul class="flex justify-center gap-8 sm:gap-12 mt-3">
-        <li><RouterLink to="/projets">Projets</RouterLink></li>
-        <li><RouterLink to="/about">A propos</RouterLink></li>
+        <li>
+          <RouterLink to="/projets">Projets</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/about">A propos</RouterLink>
+        </li>
       </ul>
+    </nav>
+    <nav class="bg-noir flex justify-between mx-2 sm:w-5/6 sm:mx-auto rounded-md p-4 sm:p-5 text-blanc mt-5" v-else>
+      <div>
+        <RouterLink to="/">Faris HALEPOVIC</RouterLink>
+      </div>
+      <ul class="max-sm:hidden flex justify-end gap-4 sm:gap-8">
+        <li>
+          <RouterLink to="/projets" @click="toggleMenu">Projets</RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/about" @click="toggleMenu">A propos</RouterLink>
+        </li>
+      </ul>
+
+      <button class="relative z-10 flex h-5 w-8 flex-col justify-between sm:hidden" @click="activeMenu = !activeMenu">
+        <div class="ease h-[2px] w-full transform rounded-full bg-blanc transition duration-300" :class="{
+          'translate-y-[9px] rotate-45 bg-blanc': activeMenu,
+        }"></div>
+        <div class="ease h-[2px] w-full transform rounded-full bg-blanc transition duration-300" :class="{
+          'bg-blanc opacity-0': activeMenu,
+        }"></div>
+        <div class="ease h-[2px] w-full transform rounded-full bg-blanc transition duration-300" :class="{
+          '-translate-y-[9px] -rotate-45 bg-blanc': activeMenu,
+        }"></div>
+      </button>
     </nav>
   </header>
 </template>

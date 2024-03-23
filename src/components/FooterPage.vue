@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const showFooter = ref(true)
 
-if (route.path === '/') {
-  showFooter.value = false
-} else {
-  showFooter.value = true
-}
+watch(route, () => {
+  if (route.path === '/') {
+    showFooter.value = false
+  } else {
+    showFooter.value = true
+  }
+})
 </script>
 
 <template>
