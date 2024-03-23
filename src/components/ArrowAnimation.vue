@@ -22,7 +22,7 @@ import Arrow from '@/components/icons/Arrow.vue';
 .carousel-wrapper {
   display: flex;
   gap: 0.5rem;
-  animation: slide 30s linear infinite;
+  animation: slide 15s linear infinite;
 }
 
 @keyframes slide {
