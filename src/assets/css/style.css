@@ -76,14 +76,19 @@ header {
     width: 100%;
 }
 
-.grid__about {
+.grid__about, .grid__projects {
     display: grid;
     gap: 2rem;
     grid-template-columns: 1fr 2fr;
 }
 
+.grid__projects {
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
-    .grid__about {
+    .grid__about, .grid__projects {
         grid-template-columns: 1fr;
         padding: 3vh;
     }
