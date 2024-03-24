@@ -17,7 +17,7 @@ defineProps<{
 </script>
 <template>
     <div class="sm:px-10 lg:px-[12%]">
-        <div class="bg-bleu w-full h-5 sm:h-16 rounded-t-lg"></div>
+        <div class="bg-bleu w-full h-5 md:h-10 lg:h-16 rounded-t-lg"></div>
         <div class="flex">
             <ul class="flex">
                 <li class="fresque__liste--items"><img :src="img1" alt="Image couverture manga"></li>
