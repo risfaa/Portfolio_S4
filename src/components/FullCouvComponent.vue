@@ -10,13 +10,15 @@ const activeCouv = ref(false)
 
 defineProps<{
     imgPath: string;
+    imgPathFull: string;
 }>();
 </script>
 <template>
 
     <div class="cursor-pointer" :class="{'fixed top-0 left-0 bg-noir bg-opacity-80 w-[100%] h-[100%]': activeCouv}" @click="toggleCouv">
         <div class="grid__couvertures--img" :class="{ 'grid__couvertures--active': activeCouv }">
-            <img :src="imgPath" alt="Image de couverture">
+            <img v-if="!activeCouv" :src="imgPath" alt="Image de couverture">
+            <img v-else :src="imgPathFull" alt="Image couverture complete">
         </div>
     </div>
 
@@ -34,8 +36,8 @@ defineProps<{
 .grid__couvertures--active {
     position: fixed;
     max-width: 100%;
-    top: 0%;
-    left: 0%;
-    transform: translate(100%, 30%) scale(1.1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
 }
 </style>
