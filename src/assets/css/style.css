@@ -7,19 +7,19 @@
 /* Fonts */
 @font-face {
     font-family: "Helvetica Neue Bold";
-    src: url("src/assets/fonts/HelveticaNeueLTProBd.otf") format("opentype");
+    src: url("/src/assets/fonts/HelveticaNeueLTProBd.otf") format("opentype");
 }
 @font-face {
     font-family: "Helvetica Neue Roman";
-    src: url("src/assets/fonts/HelveticaNeueLTProRoman.otf") format("opentype");
+    src: url("/src/assets/fonts/HelveticaNeueLTProRoman.otf") format("opentype");
 }
 @font-face {
     font-family: "Helvetica Neue Condensed";
-    src: url("src/assets/fonts/HelveticaNeueLTProCn.otf") format("opentype");
+    src: url("/src/assets/fonts/HelveticaNeueLTProCn.otf") format("opentype");
 }
 @font-face {
     font-family: "Helvetica Neue Heavy";
-    src: url("src/assets/fonts/HelveticaNeueLTProHv.otf") format("opentype");
+    src: url("/src/assets/fonts/HelveticaNeueLTProHv.otf") format("opentype");
 }
 /* */
 
