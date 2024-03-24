@@ -7,7 +7,7 @@
         <h1 class="text-center text-bleu font-Heavy text-2xl sm:text-4xl">Présentation</h1>
         <div class="grid__about sm:mt-10 lg:mt-20 md:px-10 xl:px-[20%]">
             <div>
-                <img src="/public/img/Photo_Faris.png" alt="Photo" class="rounded-lg">
+                <img src="/img/Photo_Faris.png" alt="Photo" class="rounded-lg">
                 <a href="/file/CV_Faris_HALEPOVIC.pdf" download="CV_Faris_HALEPOVIC.pdf"><div class="text-bleu mt-2 text-center border-2 p-1 rounded-md transition-all duration-500 pointer hover:text-blanc hover:bg-bleu hover:border-bleu hover:shadow-md">Télécharger mon CV</div></a>
             </div>
             <div class="font-Roman grid h-full justify-between max-sm:gap-4 lg:py-6">
