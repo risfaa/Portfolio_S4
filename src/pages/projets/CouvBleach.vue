@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ProjectPage from '../components/ProjectPage.vue';
-import FresqueComponent from '../components/FresqueComponent.vue';
-import FullCouvComponent from '../components/FullCouvComponent.vue';
+import ProjectPage from '@/components/ProjectPage.vue';
+import FresqueComponent from '@/components/FresqueComponent.vue';
+import FullCouvComponent from '@/components/FullCouvComponent.vue';
 
 </script>
 <template>
