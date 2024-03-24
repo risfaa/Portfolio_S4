@@ -84,18 +84,3 @@
         </div>
     </div>
 </template>
-
-<style>
-.grid__about {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: 1fr 2fr;
-}
-
-@media (max-width: 768px) {
-    .grid__about {
-        grid-template-columns: 1fr;
-        padding: 3vh;
-    }
-}
-</style>
