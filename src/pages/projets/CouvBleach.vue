@@ -6,10 +6,10 @@ import FullCouvComponent from '@/components/FullCouvComponent.vue';
 </script>
 <template>
     <ProjectPage 
-        imgPathHero="img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png" 
+        imgPathHero="/img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png" 
         titre="Couvertures Hunter X Hunter dans le style Bleach" 
         textBtn="Retour" 
-        link="/"
+        link="/projets"
         imgPathCover="/img/Photo_Faris.png"
         titreFresque="Voici les couvertures que j’ai réaliser pour le manga Hunter X Hunter dans le style des couvertures du manga Bleach."
     >
@@ -35,7 +35,7 @@ import FullCouvComponent from '@/components/FullCouvComponent.vue';
             />
         </template>
         <template #couvertures>
-            <FullCouvComponent imgPath="/img/Photo_Faris.png" imgPathFull="img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png" />
+            <FullCouvComponent imgPath="/img/Photo_Faris.png" imgPathFull="/img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png" />
 
         </template>
     </ProjectPage>
