@@ -26,8 +26,8 @@ watch(route, () => {
       <li><RouterLink to="/about">A propos</RouterLink></li>
     </ul>
     <ul class="flex justify-center gap-5 mt-6">
-      <li><a href=""><Instagram /></a></li>
-      <li><a href=""><LinkedIn /></a></li>
+      <li><a href="https://www.instagram.com"><Instagram /></a></li>
+      <li><a href="https://www.linkedin.com/in/faris-halepovic/?originalSubdomain=fr"><LinkedIn /></a></li>
     </ul>
   </footer>
 </template>
