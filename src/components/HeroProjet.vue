@@ -3,9 +3,9 @@ import BtnComponent from '../components/BtnComponent.vue';
 
 defineProps<{
     imgPath: string,
-    titre: String,
-    textBtn: String,
-    link: String
+    titre: string,
+    textBtn: string,
+    link: string
 }>()
 </script>
 <template>
