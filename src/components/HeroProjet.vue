@@ -2,7 +2,7 @@
 import BtnComponent from '../components/BtnComponent.vue';
 
 defineProps<{
-    imgPath: String,
+    imgPath: string,
     titre: String,
     textBtn: String,
     link: String
