@@ -50,4 +50,10 @@ defineProps<{
 .fresque__liste--items img:hover {
     transform: translateY(-20px);
 }
+
+@media (max-width: 768px) {
+    .fresque__liste--items img:hover {
+    transform: translateY(-10px);
+}
+}
 </style>
