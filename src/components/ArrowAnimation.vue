@@ -16,7 +16,7 @@ import Arrow from '@/components/icons/Arrow.vue';
 <style scoped>
 .carousel-container {
   overflow: hidden;
-  width: 11vh;
+  width: 12vh;
 }
 
 .carousel-wrapper {
@@ -25,12 +25,12 @@ import Arrow from '@/components/icons/Arrow.vue';
   animation: slide 15s linear infinite;
 }
 
-@keyframes slide {
+/* @keyframes slide {
   from {
     transform: translateX(-550%);
   }
   to {
     transform: translateX(0%);
   }
-}
+} */
 </style>

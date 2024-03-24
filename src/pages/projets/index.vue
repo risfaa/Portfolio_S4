@@ -1,38 +1,54 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
-import ArrowAnimation from '@/components/ArrowAnimation.vue'
 import ProjetImgComponent from '@/components/ProjetImgComponent.vue'
 
-// Effect machine à écrire
-const textEcriture = ref<HTMLElement | null>(null);
-let contenuEciture = '';
+// Variable pour l'effet machine à écrire
+const textElements = ref<HTMLElement[]>([]);
+let contenuEcriture: string[] = [];
+let timer: any = null;
 
 onMounted(() => {
-    // Récupérer l'élément avec la classe .ecriture-machine lors du montage du composant
-    textEcriture.value = document.querySelector('.ecriture-machine');
-    // Vérifier si l'élément existe avant de continuer
-    if (textEcriture.value) {
-        // Sauvegarder le contenu initial de l'élément
-        contenuEciture = textEcriture.value.innerHTML;
-        // Vider le contenu de l'élément
-        textEcriture.value.innerHTML = '';
-        // Initialiser un compteur pour l'effet machine à écrire
+    // Fonction pour commencer l'effet machine à écrire
+    const startTyping = (element: HTMLElement, contenuInitial: string) => {
+        // Efface le contenu de l'élément
+        element.innerHTML = '';
         let i = 0;
-        // Définir une fonction pour l'effet machine à écrire
-        const timer = setInterval(() => {
-            // Vérifier si tous les caractères ont été écrits
-            if (i < contenuEciture.length) {
-                // Ajouter un caractère à chaque intervalle
-                textEcriture.value!.innerHTML += contenuEciture.charAt(i);
+        timer = setInterval(() => {
+            // Vérifie si tous les caractères ont été écrits
+            if (i < contenuInitial.length) {
+                // Ajoute un caractère à chaque intervalle
+                element.innerHTML += contenuInitial.charAt(i);
                 i++;
             } else {
-                clearInterval(timer); // Arrêter l'intervalle lorsque tout le texte a été écrit
+                clearInterval(timer); // Arrête l'intervalle lorsque tout le texte a été écrit
             }
-        }, 100); // Intervalle de temps pour l'effet machine à écrire (100 millisecondes)
+        }, 100); // Intervalle de temps
+    };
+
+    // Récupére tous les éléments
+    textElements.value = Array.from(document.querySelectorAll('.ecriture-machine'));
+    // Vérifie si des éléments ont été trouvés
+    if (textElements.value.length > 0) {
+        // Sauvegarde le contenu initial de chaque élément
+        contenuEcriture = textElements.value.map((element) => element.innerHTML);
+
+        // Démarre l'effet machine à écrire pour chaque élément
+        textElements.value.forEach((element, index) => {
+            startTyping(element, contenuEcriture[index]);
+        });
+
+        // Redémarre l'effet
+        setInterval(() => {
+            textElements.value.forEach((element, index) => {
+                // Réinitialise le contenu initial
+                element.innerHTML = contenuEcriture[index];
+                // Démarre l'effet machine à écrire
+                startTyping(element, contenuEcriture[index]);
+            });
+        }, 12000);
     }
 });
-// //
 </script>
 <template>
     <div class="mt-[12vh] sm:mt-[20vh] md:px-[10%] lg:px-[12%]">
@@ -46,7 +62,6 @@ onMounted(() => {
 
         <section class="sm:mt-32">
             <div class="flex items-center gap-3">
-                <ArrowAnimation />
                 <h2 class="ecriture-machine font-Bold sm:text-3xl">Couvertures dans le style de bleach -</h2>
             </div>
             <p class="ml-5 mt-3 sm:text-lg">Découvrez mes jaquettes mangas qui reprennent le style incontournable du manga “Bleach” avec une apparence simple et épuré.</p>
@@ -64,7 +79,6 @@ onMounted(() => {
 
         <section class="sm:mt-32">
             <div class="flex items-center gap-3">
-                <ArrowAnimation />
                 <h2 class="ecriture-machine font-Bold sm:text-3xl">Fresque manga -</h2>
             </div>
             <p class="ml-5 mt-3 sm:text-lg">Découvrez des fresques mangas, avec une fois tout les mangas mit bout-à-bout forment une fresque qui permet d’embellir votre mangathèque.</p>
