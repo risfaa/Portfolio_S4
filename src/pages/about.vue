@@ -13,7 +13,7 @@
             <div class="font-Roman grid h-full justify-between max-sm:gap-4 lg:py-6">
                 <p>Je m’appelle Faris HALEPOVIC, j’ai 21 ans et je suis étudiant en deuxième année de BUT MMI à Montbéliard.</p>
                 <p>J’aime apprendre de nouvelles choses, je me passionne à tout. Je suis quelqu’un de très minutieux et précis, j’aime ordonner mon travail et me donner des objectifs clairs.</p>
-                <p>A travers ce Portfolio vous pourrez découvrir ma passions qu’est le manga et les animes avec mes différentes réalisations.</p>
+                <p>A travers ce Portfolio vous pourrez découvrir ma passion qu’est le manga et les animes avec mes différentes réalisations.</p>
                 <div>    
                     <p class="">Si vous désirez me contacter voici mes informations :</p>
                     <a href="mailto:faris.halepovic@gmail.com" class="link font-bold">faris.halepovic@gmail.com</a>
