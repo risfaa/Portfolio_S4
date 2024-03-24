@@ -37,7 +37,7 @@ function toggleMenu() {
       <div>
         <RouterLink to="/" class="link">Faris HALEPOVIC</RouterLink>
       </div>
-      <ul class="menu sm:justify-end sm:gap-8" :class="{ 'menu--mobile' : activeMenu}" v-if="activeMenu">
+      <ul class="menu sm:justify-end sm:gap-8" :class="{ 'menu--mobile' : activeMenu}" v-if="activeMenu" v-scroll-lock="activeMenu">
         <li class="link">
           <RouterLink to="/projets" @click="toggleMenu">Projets</RouterLink>
         </li>

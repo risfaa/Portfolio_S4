@@ -15,7 +15,7 @@ defineProps<{
 </script>
 <template>
 
-    <div class="cursor-pointer" :class="{'fixed top-0 left-0 bg-noir bg-opacity-80 w-[100%] h-[100%]': activeCouv}" @click="toggleCouv">
+    <div class="cursor-pointer" :class="{'fixed top-0 left-0 bg-noir bg-opacity-80 w-[100%] h-[100%]': activeCouv}" @click="toggleCouv" v-scroll-lock="activeCouv">
         <div class="grid__couvertures--img" :class="{ 'grid__couvertures--active': activeCouv }">
             <img v-if="!activeCouv" :src="imgPath" alt="Image de couverture">
             <img v-else :src="imgPathFull" alt="Image couverture complete">
