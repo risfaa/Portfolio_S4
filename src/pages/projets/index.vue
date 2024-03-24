@@ -6,15 +6,15 @@ import ProjetImgComponent from '@/components/ProjetImgComponent.vue'
 // Variable pour l'effet machine à écrire
 const textElements = ref<HTMLElement[]>([]);
 let contenuEcriture: string[] = [];
-let timer: any = null;
+let timers: any[] = [];
 
 onMounted(() => {
-    // Fonction pour commencer l'effet machine à écrire
+    // Fonction pour l'effet machine à écrire //
     const startTyping = (element: HTMLElement, contenuInitial: string) => {
         // Efface le contenu de l'élément
         element.innerHTML = '';
         let i = 0;
-        timer = setInterval(() => {
+        const timer = setInterval(() => {
             // Vérifie si tous les caractères ont été écrits
             if (i < contenuInitial.length) {
                 // Ajoute un caractère à chaque intervalle
@@ -24,6 +24,8 @@ onMounted(() => {
                 clearInterval(timer); // Arrête l'intervalle lorsque tout le texte a été écrit
             }
         }, 100); // Intervalle de temps
+        // Ajoute le timer à la liste
+        timers.push(timer);
     };
 
     // Récupére tous les éléments
@@ -40,14 +42,16 @@ onMounted(() => {
 
         // Redémarre l'effet
         setInterval(() => {
+            // Arrête tous les timers précédents
+            timers.forEach((timer) => clearInterval(timer));
+            // Pour chaque élément, réinitialise le contenu avec le contenu initial et démarre l'effet
             textElements.value.forEach((element, index) => {
-                // Réinitialise le contenu initial
                 element.innerHTML = contenuEcriture[index];
-                // Démarre l'effet machine à écrire
                 startTyping(element, contenuEcriture[index]);
             });
-        }, 12000);
+        }, 12000); // Temps avant de redémarrer l'effet
     }
+    // //
 });
 </script>
 <template>
