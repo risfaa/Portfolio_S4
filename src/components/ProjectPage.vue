@@ -5,6 +5,7 @@ defineProps<{
     imgPathHero: string;
     imgPathCover: string;
     titre: string;
+    sousTitre?: string;
     textBtn: string;
     link: string;
     titreFresque?: string;
@@ -12,7 +13,7 @@ defineProps<{
 </script>
 <template>
     <div class="mt-[12vh] md:px-[10%]">
-        <HeroProjet :imgPath="imgPathHero" :titre="titre" :textBtn="textBtn" :link="link" />
+        <HeroProjet :imgPath="imgPathHero" :titre="titre" :sousTitre="sousTitre" :textBtn="textBtn" :link="link" />
     </div>
     <div class="grid__projects my-10 lg:my-40 md:px-10 lg:gap-20 xl:px-[20%]">
         <img :src="imgPathCover" alt="Img couverture" class="rounded-lg">

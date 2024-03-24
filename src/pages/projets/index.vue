@@ -34,7 +34,7 @@ import ProjetImgComponent from '@/components/ProjetImgComponent.vue'
         <section class="sm:mt-32">
             <div class="flex items-center gap-3">
                 <ArrowAnimation />
-                <h2 class="font-Bold sm:text-3xl">Fresque manga personnalisée -</h2>
+                <h2 class="font-Bold sm:text-3xl">Fresque manga -</h2>
             </div>
             <p class="ml-5 mt-3 sm:text-lg">Découvrez des fresques mangas, avec une fois tout les mangas mit bout-à-bout forment une fresque qui permet d’embellir votre mangathèque.</p>
             <div class="projet__grid--manga">

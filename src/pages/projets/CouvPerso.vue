@@ -13,10 +13,15 @@ const imageUrls = [
 <template>
     <ProjectPersoPage 
         imgPathHero="/img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png" 
-        titre="Fresque manga Valhallian the black iron personnalisée" 
+        titre="Fresque manga -" 
+        sousTitre="Valhallian the black iron"
         textBtn="Retour" 
         link="/projets"
         :imageUrls=imageUrls
+        gridImgFull="/img/Photo_Faris.png"
+        gridImgWidht="/img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png"
+        gridImgAnnexe1="/img/Photo_Faris.png"
+        gridImgAnnexe2="/img/Photo_Faris.png"
     >
         <template #description>
             <p class="mt-4 sm:mt-6">Pour ce projet de couverture et tranche personnalisée tout comme les couvertures “Bleach” l’idée me viens d’un artiste belge <em>greysquirrel9</em> sur instagram qui à réaliser plus d’une quarantaine de fresque manga toute aussi admirable les unes que les autres.</p>
