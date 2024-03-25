@@ -3,7 +3,6 @@ import HeroProjet from '../components/HeroProjet.vue';
 
 defineProps<{
     imgPathHero: string;
-    imgPathCover: string;
     titre: string;
     sousTitre?: string;
     textBtn: string;
@@ -23,7 +22,7 @@ defineProps<{
         <HeroProjet :imgPath="imgPathHero" :titre="titre" :sousTitre="sousTitre" :textBtn="textBtn" :link="link" />
     </div>
     <div class="grid__projects my-10 lg:my-40 md:px-10 lg:gap-20 xl:px-[20%]">
-        <img :src="imgPathCover" alt="Img couverture" class="rounded-lg">
+        <img src="/img/couverture_bleach.png" alt="Img couverture" class="rounded-lg">
         <div class="md:text-lg grid h-full justify-between gap-4 lg:py-10">
             <slot name="description"></slot>
         </div>
@@ -41,21 +40,21 @@ defineProps<{
         <div class="grid justify-center mt-10 md:mt-40 md:px-10 xl:px-[15%] mx-auto">
             <h4 class="font-Bold md:text-2xl">Croquis figma :</h4>
             <div class="grid grid-cols-3 gap-2 mt-3 md:mt-5 md:gap-5 xl:gap-8">
-                <img :src="figma1" alt="Image croquis figma" class="rounded-md">
-                <img :src="figma2" alt="Image croquis figma" class="rounded-md">
-                <img :src="figma3" alt="Image croquis figma" class="rounded-md">
+                <img :src="figma1" alt="Image croquis figma" class="rounded-md" loading="lazy">
+                <img :src="figma2" alt="Image croquis figma" class="rounded-md" loading="lazy">
+                <img :src="figma3" alt="Image croquis figma" class="rounded-md" loading="lazy">
             </div>
         </div>
         <div class="grid justify-center mt-10 md:mt-40 md:px-10 xl:px-[15%] mx-auto">
             <h4 class="font-Bold md:text-2xl">Résultat final photoshop :</h4>
             <div class="grid grid-cols-3 gap-2 mt-3 md:mt-5 md:gap-5 xl:gap-8">
-                <img :src="photoshop1" alt="Image photoshop" class="rounded-md">
-                <img :src="photoshop2" alt="Image photoshop" class="rounded-md">
-                <img :src="photoshop3" alt="Image photoshop" class="rounded-md">
+                <img :src="photoshop1" alt="Image photoshop" class="rounded-md" loading="lazy">
+                <img :src="photoshop2" alt="Image photoshop" class="rounded-md" loading="lazy">
+                <img :src="photoshop3" alt="Image photoshop" class="rounded-md" loading="lazy">
             </div>
         </div>
         <div class="mt-5 md:mt-20 md:px-10 xl:px-[15%] mx-auto">
-            <img :src="gifPhotoshop" alt="Image gif photoshop" class="rounded-md">
+            <img :src="gifPhotoshop" alt="Image gif photoshop" class="rounded-md" loading="lazy">
         </div>
     </div>
     <div class="sm:px-10 lg:px-[15%] py-5 lg:py-20">

@@ -41,17 +41,17 @@ defineProps<{
         <div class="grid justify-center mt-10 md:mt-40 md:px-10 xl:px-[15%] mx-auto">
             <h4 class="font-Bold md:text-2xl">Croquis figma :</h4>
             <div class="grid grid-cols-3 gap-2 mt-3 md:mt-5 md:gap-5 xl:gap-8">
-                <img :src="figma1" alt="Image croquis figma" class="rounded-md">
-                <img :src="figma2" alt="Image croquis figma" class="rounded-md">
-                <img :src="figma3" alt="Image croquis figma" class="rounded-md">
+                <img :src="figma1" alt="Image croquis figma" class="rounded-md" loading="lazy">
+                <img :src="figma2" alt="Image croquis figma" class="rounded-md" loading="lazy">
+                <img :src="figma3" alt="Image croquis figma" class="rounded-md" loading="lazy">
             </div>
         </div>
         <div class="grid justify-center mt-10 md:mt-40 md:px-10 xl:px-[15%] mx-auto">
             <h4 class="font-Bold md:text-2xl">Résultat final photoshop :</h4>
             <div class="grid grid-cols-3 gap-2 mt-3 md:mt-5 md:gap-5 xl:gap-8">
-                <img :src="photoshop1" alt="Image photoshop" class="rounded-md">
-                <img :src="photoshop2" alt="Image photoshop" class="rounded-md">
-                <img :src="photoshop3" alt="Image photoshop" class="rounded-md">
+                <img :src="photoshop1" alt="Image photoshop" class="rounded-md" loading="lazy">
+                <img :src="photoshop2" alt="Image photoshop" class="rounded-md" loading="lazy">
+                <img :src="photoshop3" alt="Image photoshop" class="rounded-md" loading="lazy">
             </div>
         </div>
         <div class="mt-5 md:mt-20 md:px-10 xl:px-[15%] mx-auto">
@@ -59,12 +59,12 @@ defineProps<{
         </div>
     </div>
     <div class="grid gap-3 my-10 sm:px-10 sm:grid-cols-2 lg:gap-5 lg:px-[15%] lg:my-40">
-        <img class="rounded-md mx-auto sm:h-full" :src="gridImgFull" alt="Image couverture manga">
+        <img class="rounded-md mx-auto sm:h-full" :src="gridImgFull" alt="Image couverture manga" loading="lazy">
         <div class="grid gap-3 lg:gap-5">
             <img class="rounded-md" :src="gridImgWidht" alt="Image couverture manga">
             <div class="grid gap-3 grid-cols-2 lg:gap-5">
-                <img class="rounded-md" :src="gridImgAnnexe1" alt="Image couverture">
-                <img class="rounded-md" :src="gridImgAnnexe2" alt="Image couverture manga">
+                <img class="rounded-md" :src="gridImgAnnexe1" alt="Image couverture" loading="lazy">
+                <img class="rounded-md" :src="gridImgAnnexe2" alt="Image couverture manga" loading="lazy">
             </div>
         </div>
     </div>

@@ -36,8 +36,14 @@ defineProps<{
 .grid__couvertures--active {
     position: fixed;
     max-width: 100%;
+    width: 70%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.1);
+}
+@media (max-width: 768px) {
+    .grid__couvertures--active {
+        width: 90%;
+    }
 }
 </style>

@@ -22,7 +22,7 @@ const prevSlide = () => {
 
 <template>
     <div class="relative sm:w-[90%] lg:w-[70%] rounded-lg overflow-hidden mx-auto my-10 sm:my-32">
-        <div class="absolute top-3 left-3 sm:top-8 sm:left-8 z-10">
+        <div class="absolute bottom-3 left-3 sm:bottom-8 sm:left-8 z-10">
             <button class="bg-noir text-blanc text-sm sm:text-base p-1 sm:p-2 px-2 sm:px-3 rounded-lg font-Bold"
                 @click="prevSlide">
                 <span>Avant</span>

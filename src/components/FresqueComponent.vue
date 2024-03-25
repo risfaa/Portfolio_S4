@@ -16,7 +16,7 @@ defineProps<{
 }>();
 </script>
 <template>
-    <div class="sm:px-10 lg:px-[12%]">
+    <div class="sm:px-10 lg:px-[12%] w-[90%] mx-auto">
         <div class="bg-bleu w-full h-5 md:h-10 lg:h-16 rounded-t-lg"></div>
         <div class="flex">
             <ul class="flex">
@@ -31,7 +31,7 @@ defineProps<{
                 <li class="fresque__liste--items"><img :src="img9" alt="Image couverture manga"></li>
                 <li class="fresque__liste--items"><img :src="img10" alt="Image couverture manga"></li>
             </ul>
-            <img :src="imgCouv" alt="Image couverture aperçu" class="max-sm:hidden max-w-[20%]">
+            <img :src="imgCouv" alt="Image couverture aperçu" class="max-sm:hidden max-w-[40%]">
             <ul class="flex">
                 <li class="fresque__liste--items"><img :src="img11" alt="Image couverture manga"></li>
                 <li class="fresque__liste--items"><img :src="img12" alt="Image couverture manga"></li>
