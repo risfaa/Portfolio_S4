@@ -12,6 +12,13 @@ import FullCouvComponent from '@/components/FullCouvComponent.vue';
         link="/projets"
         imgPathCover="/img/Photo_Faris.png"
         titreFresque="Voici les couvertures que j’ai réaliser pour le manga Hunter X Hunter dans le style des couvertures du manga Bleach."
+        figma1="/img/Photo_Faris.png"
+        figma2="/img/Photo_Faris.png"
+        figma3="/img/Photo_Faris.png"
+        photoshop1="/img/Photo_Faris.png"
+        photoshop2="/img/Photo_Faris.png"
+        photoshop3="/img/Photo_Faris.png"
+        gifPhotoshop="/img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png"
     >
         <template #description>
             <p>Il y 3 ans une trend est apparue sur les réseaux sociaux qui consiste à reproduire le style des couvertures du manga “bleach” de l’auteur <em>TITE Kubo</em> et de les appliquer sur les couverture d’autres mangas.</p>

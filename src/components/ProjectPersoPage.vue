@@ -13,6 +13,13 @@ defineProps<{
     gridImgWidht: string;
     gridImgAnnexe1: string;
     gridImgAnnexe2: string;
+    figma1: string;
+    figma2: string;
+    figma3: string;
+    photoshop1: string;
+    photoshop2: string;
+    photoshop3: string;
+    gifPhotoshop: string;
 }>();
 </script>
 <template>
@@ -25,8 +32,31 @@ defineProps<{
     <div>
         <CarouselAvAp :images="imageUrls" />
     </div>
-    <div class="sm:px-10 lg:px-[15%]">
-        <p class="max-w-[900px] font-Bold leading-tight text-base lg:text-2xl mt-14 sm:mt-32 sm:pr-[20%] lg:pr-0 mb-8 sm:mb-20">Vous pouvez découvrir toutes les couvertures dans leurs entièreté avec compris la 1er et 4ème de couverture ainsi que la tranche ci dessous.</p>
+    <div class="mt-12 md:mt-44">
+        <div class="md:px-10 xl:px-[15%] mx-auto md:text-lg">
+            <p>Pour la création de ces jaquettes je reprends tout les chapitres présents dans le tome, je réfléchis aux personnages et aux moments qui m’ont marqué, et ensuite je définis quel personnage je souhaite mettre en avant.</p>
+            <p class="mt-4 md:mt-8">Pour la structure de la couverture, je suis mon instinct et laisse place à ma créativité sur la position du logo, du personnage et du texte.</p>
+            <p class="mt-4 md:mt-8">Lors du processus de création, j’utilise Figma pour faire un croquis pour avoir une idée du rendu finale. Puis quand je suis satisfait du résultat du croquis je met tout au propre sur Photoshop.</p>
+        </div>
+        <div class="grid justify-center mt-10 md:mt-40 md:px-10 xl:px-[15%] mx-auto">
+            <h4 class="font-Bold md:text-2xl">Croquis figma :</h4>
+            <div class="grid grid-cols-3 gap-2 mt-3 md:mt-5 md:gap-5 xl:gap-8">
+                <img :src="figma1" alt="Image croquis figma" class="rounded-md">
+                <img :src="figma2" alt="Image croquis figma" class="rounded-md">
+                <img :src="figma3" alt="Image croquis figma" class="rounded-md">
+            </div>
+        </div>
+        <div class="grid justify-center mt-10 md:mt-40 md:px-10 xl:px-[15%] mx-auto">
+            <h4 class="font-Bold md:text-2xl">Résultat final photoshop :</h4>
+            <div class="grid grid-cols-3 gap-2 mt-3 md:mt-5 md:gap-5 xl:gap-8">
+                <img :src="photoshop1" alt="Image photoshop" class="rounded-md">
+                <img :src="photoshop2" alt="Image photoshop" class="rounded-md">
+                <img :src="photoshop3" alt="Image photoshop" class="rounded-md">
+            </div>
+        </div>
+        <div class="mt-5 md:mt-20 md:px-10 xl:px-[15%] mx-auto">
+            <img :src="gifPhotoshop" alt="Image gif photoshop" class="rounded-md">
+        </div>
     </div>
     <div class="grid gap-3 my-10 sm:px-10 sm:grid-cols-2 lg:gap-5 lg:px-[15%] lg:my-40">
         <img class="rounded-md mx-auto sm:h-full" :src="gridImgFull" alt="Image couverture manga">
