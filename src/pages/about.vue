@@ -1,6 +1,5 @@
 <script setup lang="ts"> 
 
-
 </script>
 <template>
     <div class="mt-24 mb-24 sm:mt-40">
@@ -28,15 +27,15 @@
                     <h3 class="text-bleu text-xl font-Heavy">Programmation</h3>
                     <ul class="flex justify-around mt-8">
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/html.png" alt="logo html">
+                            <img class="mx-auto" src="/img/icons/html.png" alt="logo html">
                             <p class="mt-1">HTML</p>
                         </li>
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/css.png" alt="logo css">
+                            <img class="mx-auto" src="/img/icons/css.png" alt="logo css">
                             <p class="mt-1">CSS</p>
                         </li>
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/Wordpress.png" alt="logo css">
+                            <img class="mx-auto" src="/img/icons/Wordpress.png" alt="logo css">
                             <p class="mt-1">Wordpress</p>
                         </li>
                     </ul>
@@ -45,11 +44,11 @@
                     <h3 class="text-bleu text-xl font-Heavy">Communication</h3>
                     <ul class="flex justify-around mt-8">
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/indesign.png" alt="logo html">
+                            <img class="mx-auto" src="/img/icons/indesign.png" alt="logo html">
                             <p class="mt-1">InDesign</p>
                         </li>
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/googledrive.png" alt="logo css">
+                            <img class="mx-auto" src="/img/icons/googledrive.png" alt="logo css">
                             <p class="mt-1">Google Drive</p>
                         </li>
                     </ul>
@@ -58,15 +57,15 @@
                     <h3 class="text-bleu text-xl font-Heavy">Graphisme</h3>
                     <ul class="flex justify-around mt-8">
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/photoshop.png" alt="logo html">
+                            <img class="mx-auto" src="/img/icons/photoshop.png" alt="logo html">
                             <p class="mt-1">Photoshop</p>
                         </li>
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/illustrator.png" alt="logo css">
+                            <img class="mx-auto" src="/img/icons/illustrator.png" alt="logo css">
                             <p class="mt-1">Illustrator</p>
                         </li>
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/figma.png" alt="logo css">
+                            <img class="mx-auto" src="/img/icons/figma.png" alt="logo css">
                             <p class="mt-1">Figma</p>
                         </li>
                     </ul>
@@ -75,7 +74,7 @@
                     <h3 class="text-bleu text-xl font-Heavy">Audiovisuel</h3>
                     <ul class="flex justify-around mt-8">
                         <li class="text-center">
-                            <img class="mx-auto" src="/icons/davinci.png" alt="logo html">
+                            <img class="mx-auto" src="/img/icons/davinci.png" alt="logo html">
                             <p class="mt-1">DaVinci Resolve</p>
                         </li>
                     </ul>
