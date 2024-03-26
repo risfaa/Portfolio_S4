@@ -11,13 +11,12 @@ import FullCouvComponent from '@/components/FullCouvComponent.vue';
         textBtn="Retour" 
         link="/projets"
         titreFresque="Voici les couvertures que j’ai réaliser pour le manga Hell's Paradise dans le style des couvertures du manga Bleach."
-        figma1="/img/Photo_Faris.png"
-        figma2="/img/Photo_Faris.png"
-        figma3="/img/Photo_Faris.png"
-        photoshop1="/img/Photo_Faris.png"
-        photoshop2="/img/Photo_Faris.png"
-        photoshop3="/img/Photo_Faris.png"
-        gifPhotoshop="/img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png"
+        figma1="/img/img_info_projet/cover_bleach_hells_paradise/figma_cover_hells_paradise_1.png"
+        figma2="/img/img_info_projet/cover_bleach_hells_paradise/figma_cover_hells_paradise_2.png"
+        figma3="/img/img_info_projet/cover_bleach_hells_paradise/figma_cover_hells_paradise_3.png"
+        photoshop1="/img/img_info_projet/cover_bleach_hells_paradise/photoshop_cover_hells_paradise_1.png"
+        photoshop2="/img/img_info_projet/cover_bleach_hells_paradise/photoshop_cover_hells_paradise_2.png"
+        photoshop3="/img/img_info_projet/cover_bleach_hells_paradise/photoshop_cover_hells_paradise_3.png"
     >
         <template #description>
             <p>Il y 3 ans une trend est apparue sur les réseaux sociaux qui consiste à reproduire le style des couvertures du manga “bleach” de l’auteur <em>TITE Kubo</em> et de les appliquer sur les couverture d’autres mangas.</p>

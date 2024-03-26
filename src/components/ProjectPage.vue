@@ -14,7 +14,6 @@ defineProps<{
     photoshop1: string;
     photoshop2: string;
     photoshop3: string;
-    gifPhotoshop: string;
 }>();
 </script>
 <template>
@@ -52,9 +51,6 @@ defineProps<{
                 <img :src="photoshop2" alt="Image photoshop" class="rounded-md" loading="lazy">
                 <img :src="photoshop3" alt="Image photoshop" class="rounded-md" loading="lazy">
             </div>
-        </div>
-        <div class="mt-5 md:mt-20 md:px-10 xl:px-[15%] mx-auto">
-            <img :src="gifPhotoshop" alt="Image gif photoshop" class="rounded-md" loading="lazy">
         </div>
     </div>
     <div class="sm:px-10 lg:px-[15%] py-5 lg:py-20">

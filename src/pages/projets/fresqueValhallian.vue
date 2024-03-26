@@ -20,13 +20,12 @@ const imageUrls = [
         gridImgWidht="/img/mockup_valhallian_page_fresque/mockup_valhallian_fresque1.png"
         gridImgAnnexe1="/img/mockup_valhallian_page_fresque/mockup_yuyu_hakusho_fresque3.png"
         gridImgAnnexe2="/img/mockup_valhallian_page_fresque/mockup_yuyu_hakusho_fresque4.png"
-        figma1="/img/Photo_Faris.png"
-        figma2="/img/Photo_Faris.png"
-        figma3="/img/Photo_Faris.png"
-        photoshop1="/img/Photo_Faris.png"
-        photoshop2="/img/Photo_Faris.png"
-        photoshop3="/img/Photo_Faris.png"
-        gifPhotoshop="/img/home_page/DESIGNSYNDROME-PAPERCUT-TEXTURE.png"
+        figma1="/img/img_info_projet/fresque_valhallian/figma_fresque_valhallian_1.png"
+        figma2="/img/img_info_projet/fresque_valhallian/figma_fresque_valhallian_2.png"
+        figma3="/img/img_info_projet/fresque_valhallian/figma_fresque_valhallian_3.png"
+        photoshop1="/img/img_info_projet/fresque_valhallian/photoshop_fresque_valhallian_1.png"
+        photoshop2="/img/img_info_projet/fresque_valhallian/photoshop_fresque_valhallian_2.png"
+        photoshop3="/img/img_info_projet/fresque_valhallian/photoshop_fresque_valhallian_3.png"
     >
         <template #description>
             <p class="mt-4 sm:mt-6">Pour ce projet de couverture et tranche personnalisée tout comme les couvertures “Bleach” l’idée me viens d’un artiste belge <em>greysquirrel9</em> sur instagram qui à réaliser plus d’une quarantaine de fresque manga toute aussi admirable les unes que les autres.</p>

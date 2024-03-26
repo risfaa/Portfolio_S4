@@ -134,14 +134,15 @@ onMounted(() => {
 
 .grid__img-hover, .grid__img-hover .grid__projet--img{
     transition: all 0.4s ease;
-    padding: 6px;
+    margin: 6px;
+    border-radius: 15px;
 }
 .grid__img-hover:hover .grid__projet--img{
     background-color: rgb(0, 0, 0, 0.1);
     filter: brightness(0.8);
 }
 .grid__img-hover:hover .grid__projet--img {
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 .arrow {
     opacity: 0;
